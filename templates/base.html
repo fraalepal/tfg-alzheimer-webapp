@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet"  href="{% static 'webapp/css/styles.css' %}">
+        <title>FAOmemory - Monitorización y Estimulación Cognitiva</title>
+        <link rel="icon" type="image/png" href="{% static 'webapp/img/favicon.png' %}">
+        
+    </head>
+    <body>
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <header class="header" id="header">
+            <nav class="nav nav-contenedor">
+                <a href="#" class="logositio"><img src="{% static 'webapp/img/logo.png' %}" style="width:100px; height:100px; margin-top:15px;"  alt="" class="inicio-imagen"></a>
+                
+                <div class="menu-navegacion" id="nav-menu">
+                    <ul class="lista-navegacion">
+                        
+                        
+                        {% if user.is_authenticated %}
+                        <li class="elemento-navegacion"><a href="accounts/patient_register" class="nav__link">Nuevo Paciente</a></li>
+                        <li class="elemento-navegacion"><a href="accounts/logout" class="nav__link">Cerrar Sesión ({{user.username}})</a></li>
+                        {% else %}
+                        <li class="elemento-navegacion"><a href="#inicio" class="nav__link active-link">Inicio</a></li>
+                        <li class="elemento-navegacion"><a href="#about" class="nav__link">¿Qué es FAOmemory?</a></li>
+                        <li class="elemento-navegacion"><a href="#services" class="nav__link">Ayuda</a></li>
+                        <li class="elemento-navegacion"><a href="#app" class="nav__link">App móvil</a></li>
+                        <li class="elemento-navegacion"><a href="accounts/login" class="nav__link">Iniciar Sesión</a></li>
+                        {% endif %}
+
+                    </ul>
+                </div>
+
+                <div class="menu-oculto-navegacion" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>

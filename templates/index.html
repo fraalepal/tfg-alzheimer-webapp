@@ -1,0 +1,91 @@
+{% include 'base.html' %}
+{% load static %}
+
+        <main class="main">
+            
+
+            <section class="inicio" id="inicio">
+                <div class="inicio-contenedor nav-contenedor bd-grid">
+                    <div class="datos-inicio-contenedor">
+                        <h1 class="inicio-titulo">FAOmemory</h1>
+                        <h2 class="inicio-subtitulo">Haz que su día a día sea mejor.</h2>
+                    </div>
+    
+                    <img src="{% static 'webapp/img/doctor.png' %}" alt="" class="inicio-imagen">
+                </div>
+            </section>
+            
+            
+            <section class="about section nav-contenedor" id="about">
+                <div class="informacion-contenedor  bd-grid">
+
+                    <img src="{% static 'webapp/img/graph.png' %}" alt="" class="informacion-imagen">
+
+                    <div class="informacion-datos">
+                        <span class="seccion-subtitulo informacion-titulo-inicial">¿Qué es FAOmemory?</span>
+                        <h3 class="seccion-titulo informacion-titulo-inicial">Un seguimiento <br>más detallado</h3>
+                        <p class="informacion-descripcion">Ofrecemos un novedoso servicio para favorecer una monitorización más detallada del paciente, además de otorgarle independencia y ayuda mediante nuestra aplicación móvil.</p>
+                        <a href="#" class="button">Más información</a>
+                    </div>
+
+                    
+                </div>
+            </section>
+
+
+            
+            <section class="app section nav-contenedor" id="app">
+                <div class="movil-contenedor bd-grid">
+                    <div class="movil-datos">
+                        <span class="seccion-subtitulo movil-titulo-inicial">Aplicación móvil</span>
+                        <h2 class="seccion-titulo movil-titulo-inicial">Descarga nuestra App </h2>
+                        <p class="movil-descripcion">Encuentra nuestra aplicación en Google Play, descargarla y otorga al paciente independencia, estimulación, monitorización y seguimiento. Próximamente disponivle en Apple Store. </p>
+                        <div class="movil-disponibilidad">
+                            <a href="#"><img src="{% static 'webapp/img/app1.png' %}" alt="" class="movil-tienda"></a>
+                            <a href="#"><img src="{% static 'webapp/img/app2.png' %}" alt="" class="movil-tienda"></a>
+                        </div>
+                    </div>
+
+                    <img src="{% static 'webapp/img/movil-app.png' %}" alt="" class="movil-imagen">
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section nav-contenedor">
+            <div class="footer-contenedor bd-grid">
+                <div class="footer-contenido">
+                    <h3 class="footer-titulo">FAOmemory</h3>
+                    <span class="footer-descripcion">Estimución cognitiva para pacientes con Alzheimer</span>
+                    <div>
+                        <!--<li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                        <a href="#" class="footer-red-social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer-red-social"><i class='bx bxl-twitter'></i></a>-->
+                    </div>
+                </div>
+
+
+                <div class="footer-contenido">
+                    <h3 class="footer-titulo">Información</h3>
+                    <ul>
+                        <li><a href="#" class="footer-link-politica">Política de privacidad</a></li>
+                        <li><a href="#" class="footer-link-politica">Términos de uso del servicio</a></li>
+                    </ul>
+                </div>
+
+               
+            </div>
+
+            <p class="footer-copyright">&#169; 2021 Francisco Alé Palacios.</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="{% static 'webapp/js/main.js' %}"></script>
+    </body>
+    
+</html>

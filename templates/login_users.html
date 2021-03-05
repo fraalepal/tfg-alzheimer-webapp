@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  href="{% static 'webapp/css/login.css' %}">
+    <title>FAOmemory - Monitorización y Estimulación Cognitiva</title>
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="contenedor-formulario">
+        <div class="form-login">
+          <form action="#" class="sign-in-form">
+            <img src="{% static 'webapp/img/logo.png' %}" width="120px" height="120px" />
+            <h4 class="title">Iniciar Sesión</h4>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h1>Panel de Administrador de FAOmemory</h1>
+            
+          </div>
+          <img src="{% static 'webapp/img/register.svg' %}" class="image" alt="" />
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
