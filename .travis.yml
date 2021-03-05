@@ -16,3 +16,11 @@ script:
 branches:
    only:
      - master
+
+deploy:
+  provider: heroku
+  app: tfg-alzheimer-webapp
+  strategy: git
+  api_key: $HEROKU_AUTH_TOKEN
+  on:
+    branch: master
